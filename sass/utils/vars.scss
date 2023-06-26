@@ -1,12 +1,10 @@
 $colors: (
   "primary": #212121,
-  "main-background": #f5f4fa,
+  "mainBackground": #f5f4fa,
   "selection": #2196f3,
   "secondary": #757575,
   "accent": #fff,
 );
-
-$main-color: red;
 
 @function getColor($key) {
   @return map-get($colors, $key);
@@ -14,6 +12,28 @@ $main-color: red;
 
 @mixin transition($transition-property) {
   transition-property: $transition-property;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+%list {
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
+%list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon {
+  display: block;
+  margin: 0 auto;
 }

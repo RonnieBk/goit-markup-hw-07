@@ -1,9 +1,9 @@
-$header_bottom_color: #ececec;
+$headerBottomColor: #ececec;
 
 .page-header {
   &__container {
     display: flex;
-    border-bottom: 1px solid $header_bottom_color;
+    border-bottom: 1px solid $headerBottomColor;
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
@@ -46,7 +46,7 @@ $header_bottom_color: #ececec;
     @include transition(color);
     &:hover,
     &:focus {
-      color: $main-color;
+      color: getColor("selection");
     }
   }
   &__link--active {
@@ -81,7 +81,7 @@ $header_bottom_color: #ececec;
     fill: getColor("secondary");
     margin-right: 10px;
     line-height: 0;
-    @include transitioin(fill);
+    @include transition(fill);
   }
   .email {
     margin-right: 30px;

@@ -3,8 +3,8 @@
 @import "components/logo";
 @import "components/page-headline";
 @import "components/button";
-
-body {
+@import "components/introduction";
+@import "components/services" body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: getColor("primary");
 }

@@ -221,7 +221,7 @@ header .contacts a:focus .icon {
   border-radius: 4px;
 } */
 
-.introduction.container {
+/* .introduction.container {
   padding-top: 94px;
 }
 .introduction-text.list {
@@ -250,7 +250,7 @@ header .contacts a:focus .icon {
   display: block;
   margin: 0 auto;
 }
-
+*/
 p {
   margin: 0;
 }
@@ -259,15 +259,15 @@ p {
   margin-top: 10px;
   margin-bottom: 0;
 }
-
+/*
 .introduction-text .text {
   font-weight: 400;
   line-height: 1.7;
   text-transform: none;
   color: var(--secondary-color);
-}
+} */
 
-.services.list img {
+/* .services.list img {
   display: block;
 }
 
@@ -287,7 +287,7 @@ p {
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
-}
+} */
 
 .team-members figure {
   margin: 0;
@@ -296,7 +296,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.list {
+/* .list {
   padding: 0;
   margin: 50px 0 0 0;
 }
@@ -313,7 +313,7 @@ p {
 
 .list li:last-child {
   margin-right: 0;
-}
+} */
 
 .pictures.list li {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
