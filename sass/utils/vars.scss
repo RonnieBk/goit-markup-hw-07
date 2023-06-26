@@ -3,11 +3,17 @@ $colors: (
   "main-background": #f5f4fa,
   "selection": #2196f3,
   "secondary": #757575,
+  "accent": #fff,
 );
+
+$main-color: red;
 
 @function getColor($key) {
   @return map-get($colors, $key);
 }
 
-$default-time: 250ms;
-$default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@mixin transition($transition-property) {
+  transition-property: $transition-property;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -43,10 +43,10 @@ $header_bottom_color: #ececec;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    transition: color $default-time $default-timing-function;
+    @include transition(color);
     &:hover,
     &:focus {
-      color: getColor("selection");
+      color: $main-color;
     }
   }
   &__link--active {
@@ -75,19 +75,25 @@ $header_bottom_color: #ececec;
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.14;
-    transition: color $default-time $default-timing-function;
-    &:hover &__icon,
-    &:focus &__icon {
-      fill: getColor("selection");
-    }
+    @include transition(color);
   }
   &__icon {
     fill: getColor("secondary");
     margin-right: 10px;
     line-height: 0;
-    transition: fill $default-time $default-timing-function;
+    @include transitioin(fill);
   }
   .email {
     margin-right: 30px;
+  }
+}
+
+.contacts__link {
+  &:hover,
+  &:focus {
+    color: getColor("selection");
+    .contacts__icon {
+      fill: getColor("selection");
+    }
   }
 }
