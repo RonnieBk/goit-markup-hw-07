@@ -14,33 +14,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="navigation-logo">
-          <a href="/" class="logo"><span>Web</span>Studio</a>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__navigation">
+          <a href="/" class="page-header__logo logo"
+            ><span class="logo__word logo__word--decorative">Web</span>Studio</a
+          >
           <nav>
-            <ul class="main-links">
-              <li><a href="/agencja" class="link agency active">Agencja</a></li>
-              <li>
-                <a href="portfolio.html" class="link portfolio">Portfolio</a>
+            <ul class="page-header__main-links main-links">
+              <li class="main-links__item">
+                <a
+                  href="/agencja"
+                  class="main-links__link main-links__link--active"
+                  >Agencja</a
+                >
               </li>
-              <li><a href="/kontakt" class="link contact">Kontakt</a></li>
+              <li class="main-links__item">
+                <a href="portfolio.html" class="main-links__link">Portfolio</a>
+              </li>
+              <li class="main-links__item">
+                <a href="/kontakt" class="main-links__link">Kontakt</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="contacts">
-          <a class="contact email" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16" height="12">
+        <div class="page-header__contacts contacts">
+          <a class="contacts__link email" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <span>info@devstudio.com</span>
+            <span class="contacts__text">info@devstudio.com</span>
           </a>
 
-          <a class="contact phone-number" href="tel:+48111111111">
-            <svg class="icon" width="10" height="16">
+          <a class="contacts__link phone-number" href="tel:+48111111111">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <span>+48 111 111 111</span></a
+            <span class="contacts__text">+48 111 111 111</span></a
           >
         </div>
       </div>
@@ -333,7 +343,9 @@
     <footer>
       <div class="container">
         <div>
-          <a class="logo" href="index.html"><span>Web</span>Studio</a>
+          <a class="footer__logo logo" href="index.html"
+            ><span class="logo__word logo__word--decorative">Web</span>Studio</a
+          >
           <address class="address">
             m. Warszawa, Aleje Jerozolimskie 21
             <a class="contact email" href="mailto:info@example.com"

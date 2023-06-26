@@ -1,0 +1,13 @@
+$colors: (
+  "primary": #212121,
+  "main-background": #f5f4fa,
+  "selection": #2196f3,
+  "secondary": #757575,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$default-time: 250ms;
+$default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
