@@ -1,9 +1,10 @@
 $colors: (
   "primary": #212121,
-  "mainBackground": #f5f4fa,
+  "sectionBackground": #f5f4fa,
   "selection": #2196f3,
   "secondary": #757575,
   "accent": #fff,
+  "iconColor": #afb1b8,
 );
 
 @function getColor($key) {
@@ -14,6 +15,12 @@ $colors: (
   transition-property: $transition-property;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin border {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 %list {
@@ -33,7 +40,11 @@ $colors: (
   }
 }
 
-.icon {
-  display: block;
-  margin: 0 auto;
+p {
+  margin: 0;
+}
+
+.text {
+  margin-top: 10px;
+  margin-bottom: 0;
 }

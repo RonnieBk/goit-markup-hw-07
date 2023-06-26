@@ -1,0 +1,22 @@
+.portfolio-buttons {
+  @extend .container;
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    margin: 94 auto 0;
+  }
+  &__item {
+    @extend %list-item;
+    margin: 0;
+  }
+  &__button {
+    @extend .button;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 4px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}
