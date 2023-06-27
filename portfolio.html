@@ -15,35 +15,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="navigation-logo">
-          <a href="/" class="logo"><span>Web</span>Studio</a>
+    <header class="page-header">
+      <div class="page-header__container container">
+        <div class="page-header__navigation">
+          <a href="/" class="page-header__logo logo"
+            ><span class="logo__word logo__word--decorative">Web</span>Studio</a
+          >
           <nav>
-            <ul class="main-links">
-              <li><a href="index.html" class="link agency">Agencja</a></li>
-              <li>
-                <a href="portfolio.html" class="link portfolio active"
-                  >Portfolio</a
+            <ul class="page-header__main-links main-links">
+              <li class="main-links__item">
+                <a
+                  href="/agencja"
+                  class="main-links__link main-links__link--active"
+                  >Agencja</a
                 >
               </li>
-              <li><a href="/kontakt" class="link contact">Kontakt</a></li>
+              <li class="main-links__item">
+                <a href="portfolio.html" class="main-links__link">Portfolio</a>
+              </li>
+              <li class="main-links__item">
+                <a href="/kontakt" class="main-links__link">Kontakt</a>
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="contacts">
-          <a class="contact email" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16" height="12">
+        <div class="page-header__contacts contacts">
+          <a class="contacts__link email" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
-            <span>info@devstudio.com</span>
+            <span class="contacts__text">info@devstudio.com</span>
           </a>
 
-          <a class="contact phone-number" href="tel:+48111111111">
-            <svg class="icon" width="10" height="16">
+          <a class="contacts__link phone-number" href="tel:+48111111111">
+            <svg class="contacts__icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
-            <span>+48 111 111 111</span></a
+            <span class="contacts__text">+48 111 111 111</span></a
           >
         </div>
       </div>
@@ -303,61 +311,67 @@
         </ul>
       </div>
     </main>
-    <footer>
-      <div class="container">
-        <div>
-          <a class="logo" href="index.html"><span>Web</span>Studio</a>
-          <address class="address">
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__contacts">
+          <a class="footer__logo logo" href="index.html"
+            ><span class="logo__word logo__word--decorative">Web</span>Studio</a
+          >
+          <address class="footer__address">
             m. Warszawa, Aleje Jerozolimskie 21
-            <a class="contact email" href="mailto:info@example.com"
+            <a
+              class="footer__contact footer__contact--email"
+              href="mailto:info@example.com"
               >info@example.com</a
             >
-            <a class="contact phone-number" href="+48111111111"
+            <a
+              class="footer__contact footer__contact--phone"
+              href="+48111111111"
               >+48 111 111 111</a
             >
           </address>
         </div>
-        <div class="footer-social-media">
-          <p>Dołącz do nas</p>
-          <ul class="social-media-icons list">
-            <li class="social-media instagram">
-              <svg class="icon" width="20" height="20">
+        <div class="footer__social-media join-us">
+          <p class="join-us__text">Dołącz do nas</p>
+          <ul class="join-us__list">
+            <li class="join-us__item">
+              <svg class="join-us__icon icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-instagram-2"></use>
               </svg>
             </li>
-            <li class="social-media twitter">
-              <svg class="icon" width="20" height="20">
+            <li class="join-us__item">
+              <svg class="join-us__icon icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-twitter-1"></use>
               </svg>
             </li>
-            <li class="social-media facebook">
-              <svg class="icon" width="20" height="20">
+            <li class="join-us__item">
+              <svg class="join-us__icon icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-facebook-1"></use>
               </svg>
             </li>
-            <li class="social-media linkedin">
-              <svg class="icon" width="20" height="20">
+            <li class="join-us__item">
+              <svg class="join-us__icon icon" width="20" height="20">
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
             </li>
           </ul>
         </div>
-        <div class="signup-form">
+        <div class="footer__signup-form signup-form">
           <form name="signup_form">
-            <label for="email_address" class="form-label"
+            <label for="email_address" class="signup-form__label"
               >Zapisz się do newslettera</label
             >
-            <div>
+            <div class="sign-up-form__box">
               <input
-                class="form-input"
+                class="signup-form__input"
                 type="email"
                 name="email"
                 id="email_address"
                 placeholder="E-mail"
               />
-              <button type="submit" class="button">
-                <span>Zapisz się</span
-                ><svg class="icon" width="24" height="24">
+              <button type="submit" class="signup-form__button button">
+                <span class="signup-form__text">Zapisz się</span
+                ><svg class="signup-form__icon icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>

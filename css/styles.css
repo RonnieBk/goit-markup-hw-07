@@ -495,7 +495,7 @@ figure img {
   border-color: var(--selection-color);
   cursor: pointer;
 } */
-
+/* 
 .address {
   color: #fff;
   font-style: normal;
@@ -518,8 +518,8 @@ figure img {
 .contact:hover,
 .contact:focus {
   color: var(--selection-color);
-}
-
+} */
+/* 
 footer {
   padding: 60px 0;
   background-color: #2f303a;
@@ -533,8 +533,8 @@ footer .logo {
 footer .container {
   display: flex;
   align-items: baseline;
-}
-
+} */
+/* 
 .footer-social-media {
   margin-left: 70px;
   margin-right: 78px;
@@ -559,8 +559,8 @@ footer .container {
 
 footer .social-media-icons.list {
   margin-top: 20px;
-}
-
+} */
+/* 
 .signup-form label {
   display: block;
   font-weight: 700;
@@ -612,8 +612,8 @@ footer .social-media-icons.list {
   letter-spacing: 0.03em;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-}
-
+} */
+/* 
 .backdrop {
   position: fixed;
   left: 0;
@@ -806,4 +806,4 @@ footer .social-media-icons.list {
   opacity: 0;
   transform: scale(1);
   pointer-events: none;
-}
+} */
