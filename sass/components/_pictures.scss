@@ -64,8 +64,7 @@ $overlayColor: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     @include transition(transform);
     background-color: $overlayColor;
-    .pictures-list__figure:hover,
-    .pictures-list__figure:focus & {
+    .pictures-list__figure:hover & {
       transform: translateY(0);
     }
   }

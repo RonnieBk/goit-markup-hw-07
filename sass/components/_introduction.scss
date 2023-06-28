@@ -2,10 +2,11 @@
   @extend .container;
   padding-top: 94px;
   &__list {
+    @extend %list;
     margin: 0;
   }
   &__item {
-    display: block;
+    @extend %list-item;
     max-width: 270px;
     font-weight: 700;
     font-size: 14px;

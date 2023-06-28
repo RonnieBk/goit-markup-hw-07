@@ -1,6 +1,6 @@
 $colors: (
   "primary": #212121,
-  "sectionBackground": #f5f4fa,
+  "mainBackground": #f5f4fa,
   "selection": #2196f3,
   "secondary": #757575,
   "accent": #fff,
@@ -38,13 +38,4 @@ $colors: (
   &:last-child {
     margin-right: 0;
   }
-}
-
-p {
-  margin: 0;
-}
-
-.text {
-  margin-top: 10px;
-  margin-bottom: 0;
 }

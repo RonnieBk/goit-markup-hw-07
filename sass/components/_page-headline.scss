@@ -21,11 +21,12 @@ $headlineBackgroundColor: #2f303a;
     margin: 0 0 30px;
   }
   &__button {
-    @extend .button;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     display: flex;
+    border: 0;
+    cursor: pointer;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;

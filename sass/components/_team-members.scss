@@ -1,11 +1,18 @@
 .team-members {
   @extend .section;
-  background-color: getColor("sectionBackground");
+  background-color: getColor("mainBackground");
   margin: 0 auto;
   &__headline {
     @extend .headline;
   }
+  &__list {
+    @extend %list;
+  }
+  &__item {
+    @extend %list-item;
+  }
   &__figure {
+    display: inline-block;
     margin: 0;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -41,7 +48,7 @@
     padding: 12px;
     border-radius: 50%;
     fill: getColor("iconColor");
-    @include transition(backgrond-color);
+    @include transition(background-color);
     @include transition(fill);
     &:hover,
     &:focus {
