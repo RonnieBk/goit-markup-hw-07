@@ -12,12 +12,13 @@ $placeHolder: rgba(117, 117, 117, 0.5);
   @include transition(opacity);
   @include transition(transform);
   @include transition(visibility);
-  &--is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    transform: scale(1);
-    pointer-events: none;
-  }
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1);
+  pointer-events: none;
 }
 
 .modal {
@@ -108,7 +109,7 @@ $placeHolder: rgba(117, 117, 117, 0.5);
   &:hover,
   &:focus-within {
     border-color: getColor("selection");
-    & .icon {
+    & .form__icon {
       fill: getColor("selection");
     }
   }
