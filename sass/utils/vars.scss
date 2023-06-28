@@ -13,7 +13,7 @@ $colors: (
 
 @mixin transition($transition-property) {
   transition-property: $transition-property;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
