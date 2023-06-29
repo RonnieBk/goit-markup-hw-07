@@ -5,9 +5,10 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  @include transition(background-color);
-  @include transition(color);
-  @include transition(box-shadow);
+  // @include transition();
+  // @include transition();
+  @include transition(background-color, box-shadow, color);
+
   &:hover,
   &:focus {
     background-color: getColor("selection");
