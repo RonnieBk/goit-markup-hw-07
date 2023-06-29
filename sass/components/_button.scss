@@ -5,9 +5,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
-  // @include transition();
-  // @include transition();
-  @include transition(background-color, box-shadow, color);
+  @include transition(box-shadow, color, background-color);
 
   &:hover,
   &:focus {
