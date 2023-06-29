@@ -10,7 +10,7 @@ $overlayColor: rgba(33, 150, 243, 0.9);
   padding-bottom: 94px;
   &__item {
     @extend %list-item;
-    @include transition(box-shadow);
+    @include full-transition(box-shadow);
     margin: 15px;
     cursor: pointer;
     &:hover,
@@ -62,7 +62,7 @@ $overlayColor: rgba(33, 150, 243, 0.9);
     height: 100%;
     padding: 49px 45px 49px 24px;
     transform: translateY(100%);
-    @include transition(transform);
+    @include full-transition(transform);
     background-color: $overlayColor;
     .pictures-list__figure:hover & {
       transform: translateY(0);

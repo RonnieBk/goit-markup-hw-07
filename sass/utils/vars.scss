@@ -1,3 +1,8 @@
+// transition settings
+$default-time: 250ms;
+$default-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Colors set
 $colors: (
   "primary": #212121,
   "mainBackground": #f5f4fa,
@@ -11,12 +16,15 @@ $colors: (
   @return map-get($colors, $key);
 }
 
-@mixin transition($transitions) {
-  @each $transition in $transitions {
-    transition-property: $transition;
-    transition-duration: 2500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+@mixin transition {
+  transition-duration: $default-time;
+  transition-timing-function: $default-timing-function;
+}
+
+@mixin full-transition($transition) {
+  transition-property: $transition;
+  transition-duration: $default-time;
+  transition-timing-function: $default-timing-function;
 }
 
 @mixin border {

@@ -28,7 +28,7 @@ $boxShadowForm: rgba(0, 0, 0, 0.15);
   &__contact {
     display: block;
     color: $translucentColor;
-    @include transition(color);
+    @include full-transition(color);
     &--email {
       margin: 9px 0;
     }
@@ -66,8 +66,8 @@ $boxShadowForm: rgba(0, 0, 0, 0.15);
     padding: 12px;
     border-radius: 50%;
     fill: getColor("accent");
-    @include transition(background-color);
-    @include transition(fill);
+    transition-property: background-color, fill;
+    @include transition;
     &:hover,
     &:focus {
       background-color: getColor("selection");

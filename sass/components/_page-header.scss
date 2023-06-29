@@ -43,7 +43,7 @@ $headerBottomColor: #ececec;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    @include transition(color);
+    @include full-transition(color);
     &:hover,
     &:focus {
       color: getColor("selection");
@@ -75,13 +75,13 @@ $headerBottomColor: #ececec;
     letter-spacing: 0.02em;
     font-weight: 500;
     line-height: 1.14;
-    @include transition(color);
+    @include full-transition(color);
   }
   &__icon {
     fill: getColor("secondary");
     margin-right: 10px;
     line-height: 0;
-    @include transition(fill);
+    @include full-transition(fill);
   }
   .email {
     margin-right: 30px;

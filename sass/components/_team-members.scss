@@ -48,8 +48,8 @@
     padding: 12px;
     border-radius: 50%;
     fill: getColor("iconColor");
-    @include transition(background-color);
-    @include transition(fill);
+    transition-property: fill, background-color;
+    @include transition;
     &:hover,
     &:focus {
       background-color: getColor("selection");

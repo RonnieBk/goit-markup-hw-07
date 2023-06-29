@@ -15,7 +15,7 @@
     width: 170px;
     fill: getColor("iconColor");
     padding: 16px 32px;
-    @include transition(border-color);
+    @include full-transition(border-color);
     &:hover,
     &:focus {
       fill: getColor("selection");
@@ -24,6 +24,6 @@
   }
   &__icon {
     @extend .icon;
-    @include transition(fill);
+    @include full-transition(fill);
   }
 }
